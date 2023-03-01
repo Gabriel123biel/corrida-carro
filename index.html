@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Título do jogo -->
+  <title>Corrida de Carros</title>
+
+
+  <!-- citando as Libraries para poder funcionar -->
+  <script src="./lib/p5.min.js"></script>
+  <script src="./lib/p5.dom.min.js"></script>
+  <script src="./lib/p5.sound.min.js"></script>
+  <script src="./lib/p5.play.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+
+
+  <script>
+    // Colar o banco de dados aqui 
+    const firebaseConfig = {
+      apiKey: "AIzaSyABfOrGB3ArNj0My2QD4DP6H5Tkdn2owJ0",
+      authDomain: "jogo-do-carro-aab30.firebaseapp.com",
+      databaseURL: "https://jogo-do-carro-aab30-default-rtdb.firebaseio.com",
+      projectId: "jogo-do-carro-aab30",
+      storageBucket: "jogo-do-carro-aab30.appspot.com",
+      messagingSenderId: "1019556199269",
+      appId: "1:1019556199269:web:b51c6f90a9a85a3ea0bf8c"
+    };
+
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+</head>
+
+
+<body>
+  <!-- Citando as classes e o sketch para poder funcionar -->
+  <script src="./js/Game.js"></script>
+  <script src="./js/Form.js"></script>
+  <script src="./js/Player.js"></script>
+  <script src="./sketch.js"></script>
+</body>
+
+</html>
